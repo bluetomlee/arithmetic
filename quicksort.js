@@ -1,20 +1,20 @@
 /**
- * @quicksort
+ * @quickSort
  */
 
-const quicksort = arr => {
-    if (arr.length < 1) return;
+const quickSort = arr => {
+    if (arr.length <= 1) return arr;
     let index = Math.floor(arr.length / 2);
     let left = [];
     let right = [];
-    let privot = arr[index];
+    let pivot = arr[index];
 
     arr.map(k => {
-        if (k < privot) {
+        if (k < pivot) {
             left.push(k)
         } else {
             right.push(k);
         }
     });
-    return quicksort(left).concat(quicksort(right));
+    return quickSort(left).concat(quickSort(right));
 }
