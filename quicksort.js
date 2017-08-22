@@ -3,7 +3,7 @@
  */
 
 const quickSort = arr => {
-    if (arr.length <= 1) return arr;8115acd520b8551fa6ad0
+    if (arr.length <= 1) return arr;
     let index = Math.floor(arr.length / 2);
     let left = [];
     let right = [];
