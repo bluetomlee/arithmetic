@@ -2,7 +2,7 @@
  * @quicksort
  */
 
-const quicksort = arr => {
+const quickSort = arr => {
     if (arr.length < 1) return;
     let index = Math.floor(arr.length / 2);
     let left = [];
@@ -16,5 +16,5 @@ const quicksort = arr => {
             right.push(k);
         }
     });
-    return quicksort(left).concat(quicksort(right));
+    return quickSort(left).concat(quickSort(right));
 }
